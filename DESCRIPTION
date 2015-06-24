@@ -1,14 +1,12 @@
 Package: ptest
 Type: Package
-Title: Periodicity test in short time series
+Title:  Periodicity test in short time series
 Version: 1.10
 Date: 2010-08-09
 Author: A.I. McLeod and M.S. Islam
-Maintainer: A.I. McLeod <aimcleod@uwo.ca>
+Maintainer: A.I. McLeod <aimcleod@uwo.ca> 
 Depends: R (>= 2.0.0),
 Description: Monte-carlo tests for periodicity in short time series
 License: GPL (>= 2)
 URL: http://www.stats.uwo.ca/faculty/aim
 Packaged: 2010-08-10 00:54:35 UTC; aim
-Built: R 3.1.1; x86_64-w64-mingw32; 2015-06-24 04:33:57 UTC; windows
-Archs: i386, x64
