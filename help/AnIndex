@@ -1,0 +1,13 @@
+ptest-package	ptest-package
+Cc	Cc
+FisherGTest	FisherGTest
+FitHReg	FitHReg
+FitHRegTwoParameter	FitHRegTwoParameter
+GetFitHReg	GetFitHReg
+PeriodicityTest	PeriodicityTest
+PeriodicityTestS	PeriodicityTestS
+PeriodicityTestT	PeriodicityTestT
+pgram	pgram
+ptest	ptest-package
+SimulateAR1	SimulateAR1
+SimulateHReg	SimulateHReg
