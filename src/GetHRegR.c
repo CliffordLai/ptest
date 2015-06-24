@@ -4,7 +4,6 @@
 
    
 #include "stdafx.h"           
-#include <math.h> 
 
 __declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta)
 // Input Variables:

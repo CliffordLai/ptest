@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "nrutil.h"
 
 #define SWAP(a,b) {temp=(a);(a)=(b);(b)=temp;}
