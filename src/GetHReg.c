@@ -12,7 +12,8 @@
 // Output Variables:
 //   *an contains -2LLR (the likelihood ratio statistic)
    
-__declspec( dllexport ) void GetHReg(double *y, double *t, double *theta){                             
+// __declspec( dllexport ) void GetHReg(double *y, double *t, double *theta){                             
+ void GetHReg(double *y, double *t, double *theta){ 
 	int i,j, nF=50; //nF number of frequencies//
 	
 	VECTOR lam;

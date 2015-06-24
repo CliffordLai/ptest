@@ -13,7 +13,8 @@
 // Output Variables:
 //   sqrt(R-square) = sqrt(SSR/SST)
    
-__declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta){                             
+// __declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta){                             
+void GetHRegR(double *y, double *t, double *theta){ 
 	int i,j, nF=50; //nF number of frequencies//
 	
 	VECTOR lam;
