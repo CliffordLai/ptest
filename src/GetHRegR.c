@@ -5,7 +5,6 @@
    
 #include "stdafx.h"           
 
-__declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta)
 // Input Variables:
 //  *y is pointer to a vector containing the time series (missing values excluded)
 //  *t is pointer to a vector containing the time points (in full data case: 1, ..., n)
@@ -14,7 +13,7 @@ __declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta)
 // Output Variables:
 //   sqrt(R-square) = sqrt(SSR/SST)
    
-{                             
+__declspec( dllexport ) void GetHRegR(double *y, double *t, double *theta){                             
 	int i,j, nF=50; //nF number of frequencies//
 	
 	VECTOR lam;

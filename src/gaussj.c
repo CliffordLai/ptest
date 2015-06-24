@@ -8,9 +8,7 @@
 // output, a is replaced by its matrix inverse, and b is replaced by the corresponding set 
 // of solution vectors.
 
-void gaussj(double a[3][3],double b[3][1])
-
-{
+void gaussj(double a[3][3],double b[3][1]){
 //	int *indxc,*indxr,*ipiv;
 	int i,icol,irow,j,k,l,ll;
 	double big,dum,pivinv,temp;

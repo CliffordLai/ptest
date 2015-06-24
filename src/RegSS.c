@@ -7,8 +7,7 @@
 // (lam), the time points of the series (t), series length (nn), the series  
 // itself(yy) and a matrix X of order n by 3.
 
-double RegSS( double lam, double *t,  long n, double *y,  MATRIX X)
-{                             
+double RegSS( double lam, double *t,  long n, double *y,  MATRIX X){                             
 	int i,j,k, m=3;  
 	double a[3][3];
 	double b[3][1];

@@ -1,7 +1,6 @@
 #include "stdafx.h"
 
-VECTOR Vector( long n )
-{
+VECTOR Vector( long n ){
 	// allocate a double vector and set default values to 0
 	VECTOR vector = (VECTOR) malloc( n * sizeof(double) );
 	if( !vector ) return NULL;
@@ -10,8 +9,7 @@ VECTOR Vector( long n )
 	return vector;
 }
 
-FVECTOR FVector( long n )
-{
+FVECTOR FVector( long n ){
 	// allocate a double vector and set default values to 0
 	FVECTOR fvector = (FVECTOR) malloc( n * sizeof(float) );
 	if( !fvector ) return NULL;
@@ -19,8 +17,7 @@ FVECTOR FVector( long n )
 
 	return fvector;
 }
-IVECTOR IVector( long n )
-{
+IVECTOR IVector( long n ){
 	// allocate a double vector and set default values to 0
 	IVECTOR ivector = (IVECTOR) malloc( n * sizeof(int) );
 	if( !ivector ) return NULL;
@@ -29,8 +26,7 @@ IVECTOR IVector( long n )
 	return ivector;
 }
 
-MATRIX Matrix( long n, long m )
-{
+MATRIX Matrix( long n, long m ){
 	int i;
 	// allocate a double matrix with subscript range m[n x m]
 	MATRIX matrix;
@@ -51,8 +47,7 @@ MATRIX Matrix( long n, long m )
 	return matrix;
 }
 
-IMATRIX IMatrix( long n,  long m )
-{
+IMATRIX IMatrix( long n,  long m ){
 	int i;
 	// allocate a double matrix with subscript range m[n x m]
 	IMATRIX imatrix;
@@ -73,8 +68,7 @@ IMATRIX IMatrix( long n,  long m )
 	return imatrix;
 }
 
-FMATRIX FMatrix( long n, long m )
-{
+FMATRIX FMatrix( long n, long m ){
 	int i;
 	// allocate a double matrix with subscript range m[n x m]
 	FMATRIX fmatrix;
@@ -95,36 +89,30 @@ FMATRIX FMatrix( long n, long m )
 	return fmatrix;
 }
 
-void free_matrix( MATRIX matrix )
-{
+void free_matrix( MATRIX matrix ){
 	free( matrix[0] );
 	free( matrix );
 } 
 
-void free_imatrix( IMATRIX imatrix )
-{
+void free_imatrix( IMATRIX imatrix ){
 	free( imatrix[0] );
 	free( imatrix );
 } 
 
-void free_fmatrix( FMATRIX fmatrix )
-{
+void free_fmatrix( FMATRIX fmatrix ){
 	free( fmatrix[0] );
 	free( fmatrix );
 } 
 
-void free_vector( VECTOR vector )
-{
+void free_vector( VECTOR vector ){
 	free( vector );
 }
  
-void free_fvector( FVECTOR fvector )
-{
+void free_fvector( FVECTOR fvector ){
 	free( fvector );
 }  
 
-void free_ivector( IVECTOR ivector )
-{
+void free_ivector( IVECTOR ivector ){
 	free( ivector );
 } 
  

@@ -4,8 +4,6 @@
 // will be t, y and -2LLR (*nn is replaced by this).
    
 #include "stdafx.h"           
-
-__declspec( dllexport ) void GetHReg(double *y, double *t, double *theta)
 // Input Variables:
 //  *y is pointer to a vector containing the time series (missing values excluded)
 //  *t is pointer to a vector containing the time points (in full data case: 1, ..., n)
@@ -14,7 +12,7 @@ __declspec( dllexport ) void GetHReg(double *y, double *t, double *theta)
 // Output Variables:
 //   *an contains -2LLR (the likelihood ratio statistic)
    
-{                             
+__declspec( dllexport ) void GetHReg(double *y, double *t, double *theta){                             
 	int i,j, nF=50; //nF number of frequencies//
 	
 	VECTOR lam;
